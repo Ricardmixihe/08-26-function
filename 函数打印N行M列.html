@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.是用函数的方式实现：在页面中打印N行M列 正方形（⭐️）
+        let n = prompt('请输入打印行数');
+        let m = prompt('请输入打印列数');
+
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j < m; j++) {
+        //         document.write("⭐️");
+        //     }
+        //     document.write('<br>');
+        // }
+        function myFunction(a,b) {
+            for (let i = 0; i < a; i++) {
+                for (let j = 0; j < b; j++) {
+                document.write("⭐️");
+
+                }
+            document.write('<br>');
+                
+            }
+            
+        }
+        myFunction(n,m)
+    </script>
+</body>
+</html>
