@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 函数中的其他内容（重要）
+        // a)参数：本质上就是一个变量
+        // b)返回值：将函数中的值可以在函数外部使用
+
+
+
+        // 参数：
+        // a）形参：在定义函数的时候，函数名后面（）中的变量，形参的本质就是一个变量，前面不能加let
+        // b)试参：在调用函数的时候，函数名后面（）中的值，实参的本质就是用来给形参赋值的
+
+        // function fn(a) {
+        //     console.log(a);
+            
+        // }
+        // fn(1)
+        function fn(a) {
+            let num = 0;
+            for (let i = 0; i <= a; i++) {
+                num += i;
+            }
+            console.log(num);
+        }
+        fn(100);
+    </script>
+</body>
+</html>
