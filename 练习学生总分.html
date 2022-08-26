@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.求学生总分使用函数完成
+        //a)每一个学生考试成绩
+        //b)统计每一个学生的成绩，使用数组
+        //c)知道有多少学生，确定了数组中有多少个值
+
+        let num = prompt('请输入班级学生人数');
+        let ary = [];
+        for (let i = 1; i <= num; i++) {
+            ary.push(Number(prompt(`请输入第 ${i} 个学生的成绩`)))
+        }
+        let sum = 0;
+
+        function getSum(score) {
+            for (let i = 0; i < score.length; i++) {
+                sum += score[i]
+
+            }
+            console.log(`班级一共有 ${score.length}人,总成绩是${sum}`);
+
+        }
+        getSum(ary);
+    </script>
+</body>
+
+</html>
