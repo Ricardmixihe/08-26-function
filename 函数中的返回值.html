@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //1.函数中的返回值不是必须要加的
+        //2,函数的返回值什么情况下必须加：如果在函数外部使用函数内部变量的时候，则必须加返回值
+        // 3.函数中的返回值可以设置多少个？数中的返回值，只能返回一个
+
+
+
+        // 函数的返回值怎么用？
+        // a)在需要返回的值前面加return关键字
+        // b)需要在函数外部接收函数内部返回的值：let变量= 函数名（）；
+        function fn() {
+            let a = 123;
+            return a;
+            
+        }
+        let b = fn();
+        console.log(b);
+    </script>
+</body>
+</html>
