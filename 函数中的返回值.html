@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
         //1.函数中的返回值不是必须要加的
         //2,函数的返回值什么情况下必须加：如果在函数外部使用函数内部变量的时候，则必须加返回值
-        // 3.函数中的返回值可以设置多少个？数中的返回值，只能返回一个
-
-
+        //3.函数中的返回值可以设置多少个？数中的返回值，只能返回一个
+        //4.函数中当程序执行了return.后，return后面的代码不再执行
+        //5.函数的返回值是什么，那么得的结果就是其对应的内容
+        //6.如果需要函数返回多个结果，则可以将结果放到一个数组中返回
+        //7.如果函数中返回值return后面没有写值，则得到的结果是undefined
+        //8.如果函数中没有设置return,那么得到的结果是undefined
 
         // 函数的返回值怎么用？
         // a)在需要返回的值前面加return关键字
@@ -21,10 +26,11 @@
         function fn() {
             let a = 123;
             return a;
-            
+
         }
         let b = fn();
         console.log(b);
     </script>
 </body>
+
 </html>
